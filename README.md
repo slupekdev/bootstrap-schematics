@@ -9,7 +9,7 @@ A collection of Schematics for Bootstrap.
 ```
 
 ## Collection
-- [Shell](shell/README.md) - adds Bootstrap and its depedencies and pre-configures the angular cli application (based on https://github.com/angular/angular-cli/wiki/stories-include-bootstrap).
+- [Shell](./src/shell/README.md) - adds Bootstrap and its depedencies and pre-configures the angular cli application (based on https://github.com/angular/angular-cli/wiki/stories-include-bootstrap).
 
 
 
