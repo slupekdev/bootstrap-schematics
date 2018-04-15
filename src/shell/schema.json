@@ -4,12 +4,6 @@
     "title": "Bootstrap Options Schema",
     "type": "object",
     "properties": {
-      "clientApp": {
-        "type": "string",
-        "description": "Name or index of related client app.",
-        "default": "0",
-        "alias": "a"
-      },
       "version": {
         "type": "string",
         "description": "Which version of Boostrap to use (3 or 4).",

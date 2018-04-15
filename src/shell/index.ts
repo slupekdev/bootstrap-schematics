@@ -32,7 +32,7 @@ function updateConfigFile(options: Schema): Rule {
 
     if (options.styleext === 'css') {
       const config = getConfig(host);
-      const app = getAppFromConfig(config, options.clientApp || '0');
+      const app = getAppFromConfig(config, options.app || '0');
       if (app === null) {
         throw new SchematicsException('Client app not found.');
       }
@@ -77,7 +77,7 @@ function addDependencies(options: Schema): Rule {
 function addVariablesFile(options: Schema): Rule {
   return (host: Tree) => {
     if (options.styleext === 'scss') {
-      const app = getAppByIndexOrName(host, options.clientApp);
+      const app = getAppByIndexOrName(host, options.app);
       const variableFilePath = normalize(`/${app!.root}/_variables.scss`);
       let content = ``;
 
@@ -97,7 +97,7 @@ function addVariablesFile(options: Schema): Rule {
 function importStyles(options: Schema): Rule {
   return (host: Tree) => {
     if (options.styleext === 'scss') {
-      const app = getAppByIndexOrName(host, options.clientApp);
+      const app = getAppByIndexOrName(host, options.app);
       const stylesPath = normalize(`/${app!.root}/styles.scss`);
 
       const buffer = host.read(stylesPath);

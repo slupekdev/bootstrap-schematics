@@ -1,6 +1,6 @@
 {
   "name": "bootstrap-schematics",
-  "version": "1.7.4",
+  "version": "1.7.1",
   "description": "Bootstrap Options Schema",
   "scripts": {
     "build": "tsc -p tsconfig.json",
