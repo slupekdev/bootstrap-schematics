@@ -15,6 +15,7 @@
   "author": "Slupek <slupek.dev@gmail.com>",
   "license": "MIT",
   "schematics": "./src/collection.json",
+  "repository": "git@github.com:slupekdev/bootstrap-schematics.git",
   "dependencies": {
     "@angular-devkit/core": "~0.2.0",
     "@angular-devkit/schematics": "~0.2.0",
