@@ -22,7 +22,7 @@ Version of Bootstrap (`3` or `4`)
 
 Name or index of related client app.
 
-* `--clientApp` (alias: `-a`)
+* `--app` (alias: `-a`)
   * Type: `string`
   * Default: `0`
 
