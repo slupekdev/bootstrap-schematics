@@ -1,0 +1,27 @@
+{
+    "$schema": "http://json-schema.org/schema",
+    "id": "BootstrapSchematics",
+    "title": "Bootstrap Options Schema",
+    "type": "object",
+    "properties": {
+      "clientApp": {
+        "type": "string",
+        "description": "Name or index of related client app.",
+        "default": "0",
+        "alias": "a"
+      },
+      "version": {
+        "type": "string",
+        "description": "Which version of Boostrap to use (3 or 4).",
+        "default": "4",
+        "alias": "v",
+        "enum": ["3", "4"]
+      },
+      "styleext": {
+        "description": "The file extension to be used for style files.",
+        "type": "string"
+      }
+    },
+    "required": [
+    ]
+  }

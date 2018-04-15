@@ -1,0 +1,29 @@
+{
+  "name": "bootstrap-schematics",
+  "version": "1.7.4",
+  "description": "Bootstrap Options Schema",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && jasmine **/*_spec.js"
+  },
+  "keywords": [
+    "schematics",
+    "angular",
+    "bootstrap",
+    "angular-cli"
+  ],
+  "author": "Slupek <slupek.dev@gmail.com>",
+  "license": "MIT",
+  "schematics": "./src/collection.json",
+  "dependencies": {
+    "@angular-devkit/core": "~0.2.0",
+    "@angular-devkit/schematics": "~0.2.0",
+    "@schematics/angular": "~0.2.0",
+    "typescript": "^2.5.2"
+  },
+  "devDependencies": {
+    "@types/jasmine": "^2.6.0",
+    "@types/node": "^8.0.31",
+    "jasmine": "^2.8.0"
+  }
+}

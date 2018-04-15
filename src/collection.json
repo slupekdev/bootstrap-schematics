@@ -1,0 +1,11 @@
+{
+  "$schema": "./node_modules/@angular-devkit/schematics/collection-schema.json",
+  "schematics": {
+    "ng-add": {
+      "description": "Create a Bootstrap shell",
+      "factory": "./shell/index",
+      "schema": "./shell/schema.json",
+      "aliases": [ "bootstrap-shell" ]
+    }
+  }
+}
